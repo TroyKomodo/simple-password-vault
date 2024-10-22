@@ -358,7 +358,7 @@ fn gen_search_string(query: &str) -> String {
         "%{}%",
         query
             .replace("!", "!!")
-            .replace("%", "%%")
+            .replace("%", "!%")
             .replace("_", "!_")
             .replace("[", "![")
     )
